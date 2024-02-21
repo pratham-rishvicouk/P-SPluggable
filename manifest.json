@@ -1,0 +1,65 @@
+{
+  "LinnworksPermissions": [],
+  "Modules": [
+    {
+      "RequiredPermissionId": null,
+      "moduleName": "placeholderOrderTemplate",
+      "formattedName": "Placeholder Order Template",
+      "icon": null,
+      "path": "https://your-url.com/",
+      "type": "NativeUserInterface",
+      "isHidden": true,
+      "isBeta": false,
+      "isAngularComponent": false,
+      "maxOpened": 0,
+      "group": [],
+      "parameters": [],
+      "files": {
+        "scripts": [],
+        "style": null,
+        "styles": []
+      }
+    },
+    {
+      "RequiredPermissionId": null,
+      "moduleName": "Inventory",
+      "formattedName": null,
+      "icon": null,
+      "path": "",
+      "type": null,
+      "isHidden": false,
+      "isBeta": false,
+      "isAngularComponent": false,
+      "maxOpened": 0,
+      "group": [
+        {
+          "RequiredPermissionId": null,
+          "moduleName": "Orders",
+          "formattedName": null,
+          "icon": null,
+          "path": "",
+          "type": "PluggableComponent",
+          "isHidden": false,
+          "isBeta": false,
+          "isAngularComponent": false,
+          "maxOpened": 0,
+          "group": [],
+          "parameters": [],
+          "files": {
+            "scripts": [
+              "https://your-url.com/ooplaceholderComponent.js"
+            ],
+            "style": null,
+            "styles": []
+          }
+        }
+      ],
+      "parameters": [],
+      "files": {
+        "scripts": [],
+        "style": null,
+        "styles": []
+      }
+    }
+  ]
+}

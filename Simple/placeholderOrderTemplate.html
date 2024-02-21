@@ -1,0 +1,19 @@
+﻿<div class="placeholderOrderTemplate fullscreen-control backdrop new-screen asfs">
+  <window ng-class="{'hidden-controls': $ctrl.defaultButtonsHidden, 'hidden-minimize': $ctrl.isMinimizeHidden}">
+    <window-title title="{{$ctrl.windowTitle}}">
+      {{$ctrl.windowTitle}}
+    </window-title>
+    <window-body>
+
+      <h4>Selected orders:</h4>
+      <h5 ng-repeat="orderData in $ctrl.selectedOrders">{{orderData.num_id}}</h5>
+
+    </window-body>
+    <window-footer>
+      <button class="icon primary-lighter" ng-click="$ctrl.close({search: 'Search Content from window'})">Close &
+        Search</button>
+      <button class="icon" ng-click="$ctrl.close()">Close</button>
+    </window-footer>
+  </window>
+</div>
+
